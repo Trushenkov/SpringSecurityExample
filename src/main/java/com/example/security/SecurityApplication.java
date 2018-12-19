@@ -1,19 +1,15 @@
 package com.example.security;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHttpSession;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
-@EnableAutoConfiguration
-@Configuration
-@ComponentScan
-@EnableJdbcHttpSession
+@PropertySource("classpath:application.properties")
+@SpringBootApplication
 public class SecurityApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SecurityApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SecurityApplication.class, args);
+    }
 
 }
