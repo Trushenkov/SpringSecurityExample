@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Successful data!</title>
+    <title>Успешный вход</title>
+    <style>
+        h1{
+            padding-top: 35%;
+            margin-top:0;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container{
+            height: 100vh;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .form-btn{
+        }
+        .btn {
+            background-color: #ffb94b;
+            border-radius: 3px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+            border: 1px solid #d69e31;
+            height: 35px;
+            padding: 0;
+            width: 20%;
+            cursor: pointer;
+            font: bold 15px Arial, Helvetica;
+            color: #8f5a0a;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
-<form th:action="@{/logout}" method="post">
-    <input type="submit" value="ВЫЙТИ"/>
-</form>
+<div class="container">
+    <h1 th:inline="text">Привет, [[${#httpServletRequest.remoteUser}]]!</h1>
+    <form th:action="@{/logout}" method="post" class="form-btn">
+        <input class="btn" type="submit" value="ВЫЙТИ"/>
+    </form>
+</div>
+
 </body>
 </html>
