@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика пользователя</title>
+    <style>
+        h1 {
+            /*margin-top: 15%;*/
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center
+        }
+        p {
+            margin: 0;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+<h1>Пользователь: &nbsp; <p th:text="${param.login}"></p></h1>
+<h1>Дата и время: &nbsp; <p> с <span th:text="${param.dateFrom} + ' 00:00:00'"></span> до <span th:text="${param.dateTo} + ' 00:00:00' "></span> </p></h1>
+<h1>Количество входов в систему: &nbsp;<p th:text="*{count}"></p></h1>
+</body>
+</html>
