@@ -1,4 +1,6 @@
-package com.example.security;
+package com.example.security.Repository;
+
+import com.example.security.User;
 
 import java.sql.Date;
 
