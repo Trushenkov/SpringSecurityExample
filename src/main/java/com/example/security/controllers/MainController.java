@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Date;
 
+/**
+ * Контроллер для обработки запроса по адресу "localhost:8080/statistic..."
+ */
 @Controller
 public class MainController {
 
