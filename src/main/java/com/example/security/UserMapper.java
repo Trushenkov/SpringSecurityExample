@@ -7,6 +7,8 @@ import java.sql.SQLException;
 
 /**
  * Класс для отображения прочитанных строк в результирующий объект
+ *
+ * @author Трушенков Д.
  */
 public class UserMapper implements RowMapper<User> {
 

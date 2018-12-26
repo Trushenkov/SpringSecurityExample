@@ -2,6 +2,8 @@ package com.example.security;
 
 /**
  * Класс объекта "Пользователь" для хранения информации о кол-ве входов в систему
+ *
+ * @author Трушенков Д.
  */
 public class User {
 

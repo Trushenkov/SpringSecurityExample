@@ -14,6 +14,11 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import javax.sql.DataSource;
 
+/**
+ * Класс конфигурации Spring Security
+ *
+ * @author Трушенков Д.
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {

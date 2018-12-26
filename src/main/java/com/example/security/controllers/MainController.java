@@ -13,6 +13,8 @@ import java.sql.Date;
 
 /**
  * Контроллер для обработки запроса по адресу "localhost:8080/statistic..."
+ *
+ * @author Трушенков Д.
  */
 @Controller
 public class MainController {
